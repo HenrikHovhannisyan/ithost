@@ -177,7 +177,7 @@ html {
 
 .home1_banner_outer {
   padding-top: 20px;
-  background-color: var(--e-global-color-secondary);
+  background-color: var(--e-global-color-accent);
 }
 .home1_banner_outer .banner-lefttoptriangle {
   position: absolute;
@@ -981,7 +981,7 @@ html {
 
 .guarantee-con {
   padding: 132px 0 140px;
-  background-color: var(--e-global-color-secondary);
+  background-color: var(--e-global-color-primary);
 }
 .guarantee-con .guarantee_content h5 {
   margin-bottom: 16px;
