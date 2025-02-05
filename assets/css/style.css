@@ -177,7 +177,8 @@ html {
 
 .home1_banner_outer {
   padding-top: 20px;
-  background-color: var(--e-global-color-accent);
+  padding-bottom: 20px;
+  /*background-color: var(--e-global-color-accent);*/
 }
 .home1_banner_outer .banner-lefttoptriangle {
   position: absolute;

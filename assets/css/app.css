@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --e-global-color-primary: #ffffff;
+    --e-global-color-secondary: #14141e;
+    --e-global-color-accent: #1868dd;
+    --e-global-color-text: #555555;
+    --e-global-color-white: #ffffff;
+    --e-global-color-black: #000000;
+    --e-global-color-light-grayish-blue: #f1f5f9;
+    --e-global-color-dark-grayish-blue: #4d5b6c;
+    --e-global-color-light-gray: #cccccc;
+    --e-global-color-very-pale-blue: #f2f8ff;
+    --e-global-color-pure-red: #ff0000;
+}
+
+/* Start Domain page */
+
+.free_method {
+    text-align: center;
+    width: max-content;
+    background-color: var(--e-global-color-accent);
+    margin: auto;
+    padding: 10px 40px 10px 10px;
+    border-radius: 40px;
+}
+
+.free_method > .free_btn {
+    font-family: Roboto, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    background-color: var(--e-global-color-primary);
+    border-radius: 20px;
+}
+
+.free_method > span {
+    font-family: Roboto, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: var(--e-global-color-primary);
+}
+
+.new_domain > form h2 {
+    font-family: Roboto, serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    color: #303030;
+}
+
+#choose_domain {
+    margin-top: 100px;
+}
+
+.new_domain > form #domains {
+    max-width: max-content;
+}
+
+.new_domain > form label {
+    font-family: Roboto, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #303030;
+}
+
+.new_domain > form .d-inline,
+.new_domain > form .d-flex {
+    gap: 20px;
+}
+
+.new_domain > form input,
+.new_domain > form select,
+.input_border {
+    border: 1px solid #D9D9D9;
+    border-radius: 40px;
+    padding: 10px 14px;
+}
+
+.new_domain > form input::placeholder {
+    font-family: Roboto, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #D9D9D9;
+}
+
+.new_domain > form .choose_domain_info {
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #303030;
+    margin-top: 14px;
+}
+
+#choose_hosting,
+#billing_info,
+#add_additional_services,
+#account_information,
+#review_order_details {
+    margin-top: 80px;
+}
+
+#choose_hosting > .d-flex {
+    margin-top: 40px;
+}
+
+.new_domain > form .text {
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+}
+
+.input_border {
+    display: flex;
+}
+
+.tel_info {
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #303030;
+}
+
+#add_additional_services label {
+    cursor: pointer;
+}
+
+#add_additional_services .services_container .title {
+    font-family: Roboto, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #263B80;
+}
+
+#add_additional_services .services_container .description {
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #303030;
+}
+
+#add_additional_services .services_container .info_text {
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #303030;
+}
+
+#account_information .col-12 {
+    display: flex;
+    gap: 35px;
+}
+
+#review_order_details .title {
+    font-family: Roboto, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #303030;
+    margin-bottom: 40px;
+}
+
+#review_order_details .order_status {
+    font-family: Roboto, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-decoration-skip-ink: none;
+    color: #263B80;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+#review_order_details .order_status > .discount {
+    text-decoration-line: line-through;
+}
+
+#review_order_details .total,
+#review_order_details .amount {
+    max-width: max-content;
+    margin-left: auto;
+}
+
+#review_order_details .total > p,
+#review_order_details .amount > p {
+    font-family: Roboto, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-decoration-skip-ink: none;
+    color: #303030;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#review_order_details .total > p > span {
+    font-weight: bold;
+}
+
+#review_order_details hr {
+    border: 1px solid #000000;
+    margin-bottom: 30px;
+}
+
+#review_order_details .amount > p {
+    gap: 60px;
+    align-items: center;
+}
+
+#review_order_details .amount > p > span {
+    font-family: Roboto, serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: right;
+    text-decoration-skip-ink: none;
+}
+
+.btn_check_out {
+    font-family: Roboto, serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+    background: #1868DD;
+    padding: 16px 100px;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    #review_order_details .title,
+    #review_order_details .order_status,
+    #review_order_details .total > p,
+    #review_order_details .amount > p {
+        font-size: 16px;
+    }
+}
+
+/* End Domain page */

@@ -92,6 +92,7 @@
     <!-- StyleSheet link CSS -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <link
       href="assets/css/owl.carousel.min.css"
       rel="stylesheet"
@@ -546,7 +547,7 @@
                   </p>
                 </li>
               </ul>
-              <a href="./pricing.html" class="text-decoration-none primary_btn"
+              <a href="domain.html" class="text-decoration-none primary_btn"
                 >Select plan<i class="fa-solid fa-arrow-right"></i
               ></a>
               <div class="hide-text">
@@ -593,7 +594,7 @@
                   <p class="mb-0 text-size-16"><span>1.5 TB</span> Bandwidth</p>
                 </li>
               </ul>
-              <a href="./pricing.html" class="text-decoration-none primary_btn"
+              <a href="domain.html" class="text-decoration-none primary_btn"
                 >Select plan<i class="fa-solid fa-arrow-right"></i
               ></a>
               <div class="hide-text">
@@ -639,7 +640,7 @@
                   <p class="mb-0 text-size-16"><span>10 TB</span> Bandwidth</p>
                 </li>
               </ul>
-              <a href="./pricing.html" class="text-decoration-none primary_btn"
+              <a href="domain.html" class="text-decoration-none primary_btn"
                 >Select plan<i class="fa-solid fa-arrow-right"></i
               ></a>
               <div class="hide-text">
@@ -1911,19 +1912,6 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/back-to-top-button.js"></script>
     <script src="assets/js/preloader.js"></script>
-    <script>
-      document
-        .getElementById("billingToggle")
-        .addEventListener("change", function () {
-          let isYearly = this.checked;
-
-          document.querySelectorAll(".price").forEach((price) => {
-            price.textContent = isYearly ? "55" : "29";
-          });
-          document.querySelectorAll(".month").forEach((label) => {
-            label.textContent = isYearly ? "/Year" : "/Month";
-          });
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
