@@ -1,19 +1,3 @@
-// Start Plans That Grow with You
-document
-    .getElementById("billingToggle")
-    .addEventListener("change", function () {
-        let isYearly = this.checked;
-
-        document.querySelectorAll(".price").forEach((price) => {
-            price.textContent = isYearly ? "55" : "29";
-        });
-        document.querySelectorAll(".month").forEach((label) => {
-            label.textContent = isYearly ? "/Year" : "/Month";
-        });
-    });
-
-// End Plans That Grow with You
-
 // Start Toggle Password Visibility
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".input_border .btn").forEach(button => {
@@ -35,3 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // End Toggle Password Visibility
+
+document.getElementById('uploadBtn').addEventListener('click', function () {
+    document.getElementById('avatarInput').click();
+});
+
+document.getElementById('avatarInput').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById('avatarPreview').src = e.target.result;
+            document.getElementById('avatarHidden').value = e.target.result; // Base64 код
+        };
+        reader.readAsDataURL(file);
+    }
+});

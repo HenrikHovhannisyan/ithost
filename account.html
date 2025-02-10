@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <title>ItHost | Domain</title>
+    <title>ItHost | Account</title>
     <link rel="stylesheet" href="./assets/images/favicon/favicon.ico">
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
@@ -203,320 +203,92 @@
     </header>
 </div>
 
-<div class="container pb-5">
+<div class="container pb-5 account">
     <div class="row">
-        <section class="free_method">
-            <button class="btn free_btn">Free</button>
-            <span>1 Year Domain Registration on Select Annual Plans!</span>
-        </section>
-    </div>
-    <section class="new_domain">
-        <form action="">
-            <section id="choose_domain">
-                <h2>Choose a Domain</h2>
-                <label for="enter_your_domain">Enter Your Domain</label>
-                <div class="d-flex">
-                    <input type="text" class="form-control" id="enter_your_domain"
-                           placeholder="search for a domain name..." required>
-                    <select class="form-control" id="domains">
-                        <option>.com</option>
-                        <option>.io</option>
-                        <option>.net</option>
-                    </select>
+        <div class="col-xl-4">
+            <div class="card mb-4 mb-xl-0">
+                <div class="card-body text-center shadow">
+                    <img id="avatarPreview" class="img-account-profile rounded-circle mb-2"
+                         src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                    <input id="avatarInput" type="file" class="d-none" accept="image/*">
+                    <br>
+                    <button id="uploadBtn" class="btn btn_check_out p-2 pl-3 pr-3 mt-3" type="button">
+                        Upload new image
+                    </button>
                 </div>
-                <p class="choose_domain_info">
-                    Max is 5 domains per order. Please contact support at 866-964-2867 for assistance in <br>
-                    purchasing
-                    more than 5 domains
-                </p>
-            </section>
-            <section id="choose_hosting">
-                <h2>Choose a Hosting Plan</h2>
-                <div class="d-inline d-md-flex">
-                    <div class="col pl-0 pr-0">
-                        <label for="package_type">Package Type</label>
-                        <select class="form-control" id="package_type">
-                            <option>Starter</option>
-                            <option>Premium</option>
-                            <option>Unlimate</option>
-                        </select>
-                    </div>
-                    <div class="col pl-0 pr-0">
-                        <label for="billing_cycle">Billing Cycle</label>
-                        <select class="form-control" id="billing_cycle">
-                            <option>36 Months 2.75/mo - 72.47% off!</option>
-                            <option>36 Months 2.75/mo - 72.47% off!</option>
-                        </select>
-                        <p class="choose_domain_info">Plan renews 2027/7/30 @ 9.99/mo*</p>
-                    </div>
-                </div>
-            </section>
-            <section id="hostGator_account">
-                <div class="col-12 text-center">
-                    <h2>Create your HostGator Account</h2>
-                    <p class="text">
-                        Already have a ithost.io account? 
-                        <a href="">
-                            Sign in
-                        </a>
-                    </p>
-                </div>
-                <div class="">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <label for="email">Email Address <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="enter your email"
-                                   required>
-                            <p class="choose_domain_info">
-                                We will send your receipt and login information to this address.
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label for="confirm_email">Confirm Email Address <span
-                                    class="text-danger">*</span></label>
-                            <input type="email" class="form-control" id="confirm_email"
-                                   placeholder="confirm your email" required>
-                        </div>
-                    </div>
-                    <div class="row" id="billingToggle">
-                        <div class="col-12 col-md-6">
-                            <label for="password">Password <span class="text-danger">*</span></label>
-                            <div class="input_border p-0">
-                                <input type="password" class="form-control border-0" id="password"
-                                       placeholder="enter your password" required>
-                                <span class="btn">
-                                        <i class="fa-regular fa-eye-slash"></i>
-                                    </span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label for="confirm_password">Confirm Password <span
-                                    class="text-danger">*</span></label>
-                            <div class="input_border p-0">
-                                <input type="password" class="form-control border-0" id="confirm_password"
-                                       placeholder="confirm your password" required>
-                                <span class="btn">
-                                        <i class="fa-regular fa-eye-slash"></i>
-                                    </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="billing_info">
-                <h2>Enter your Billing Info</h2>
-                <div class="d-inline d-md-flex">
-                    <div class="col pl-0 pr-0">
-                        <label for="name">First Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="name" placeholder="Name" required>
-                    </div>
-                    <div class="col pl-0 pr-0">
-                        <label for="surname">Last Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="surname" placeholder="Surname" required>
-                    </div>
-                </div>
-                <div class="d-inline d-md-flex mt-5">
-                    <div class="col pl-0 pr-0">
-                        <label for="company">Company</label>
-                        <input type="text" class="form-control" id="company" placeholder="Name">
-                    </div>
-                    <div class="col pl-0 pr-0">
-                        <label for="tel">
-                            Phone number 
-                            <span class="text-danger">*</span>
-                            <span class="tel_info">eg. (555) 901-9012</span>
-                        </label>
-                        <input type="tel" class="form-control" id="tel" placeholder="Phone number" required>
-                        <p class="choose_domain_info">Use international number</p>
-                    </div>
-                </div>
-                <div class="d-inline d-md-flex">
-                    <div class="col pl-0 pr-0">
-                        <label for="address">Address <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="address" placeholder="Address">
-                    </div>
-                    <div class="col pl-0 pr-0">
-                        <label for="country">
-                            Country 
-                            <span class="text-danger">*</span>
-                        </label>
-                        <select class="form-control" id="country">
-                            <option>Select a country...</option>
-                        </select>
-                    </div>
-                </div>
-            </section>
-            <section id="add_additional_services">
-                <h2>Add Additional Services</h2>
-                <div class="form-group row mt-4">
-                    <div class="col">
-                        <div class="form-check">
-                            <label class="form-check-label col-12" for="gridCheck1">
-                                    <span class="d-inline d-md-flex">
-                                        <img src="./assets/images/add_additional_services/1.png" class="img-fluid"
-                                             alt="Site Backup">
-                                        <span class="services_container">
-                                            <h3 class="title">Site Backup</h3>
-                                            <p class="description">Backup Your Hard Work. (Powered By CodeGuard)</p>
-                                            <p class="description">$1.99/mo (Billed annually @ $23.88)</p>
-                                            <p class="info_text">It's insurance for your website. Get daily automated website backup for all web files and databases with a 1-click restore. Renews at $3.99/mo (Billed Annually @ $47.88)</p>
-                                        </span>
-                                    </span>
-                            </label>
-                            <input class="form-check-input" name="test" type="radio" id="gridCheck1">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label col-12" for="gridCheck2">
-                                    <span class="d-inline d-md-flex">
-                                        <img src="./assets/images/add_additional_services/2.png" class="img-fluid"
-                                             alt="SSL Certificate">
-                                        <span class="services_container">
-                                            <h3 class="title">SSL Certificate</h3>
-                                            <p class="description">Backup Your Hard Work. (Powered By CodeGuard)</p>
-                                            <p class="description">$3.33/mo (Billed annually @ $39.96)</p>
-                                            <p class="info_text">
-                                                Give yourself and your visitors peace of mind by securing your website with a Positive SSL by Sectigo. Unlike a free SSL, this Positive SSL comes with a warranty of up to $10,000 to ensure your visitor’s information (passwords, credit card info, etc.) is protected and encrypted. Plus, you’ll get the official site seal to display on your site and show visitors their data is safe. Renews at $7.49/mo (Billed Annually @ $89.88)
-                                            </p>
-                                        </span>
-                                    </span>
-                            </label>
-                            <input class="form-check-input" name="test" type="radio" id="gridCheck2">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label col-12" for="gridCheck3">
-                                    <span class="d-inline d-md-flex">
-                                        <img src="./assets/images/add_additional_services/3.png" class="img-fluid"
-                                             alt="SiteLock Essentials">
-                                        <span class="services_container">
-                                            <h3 class="title">SiteLock Essentials</h3>
-                                            <p class="description">Secure your website with SiteLock Essentials</p>
-                                            <p class="description">$2.99/mo (Billed annually @ $35.88)</p>
-                                            <p class="info_text">
-SiteLock will find, fix, and protect your site from malware and malicious attacks. SiteLock automatically downloads site data, screens it, removes malware, and uploads the clean version of your site. Renews at $7.99/mo (Billed Annually @ $95.88)
-                                            </p>
-                                        </span>
-                                    </span>
-                            </label>
-                            <input class="form-check-input" name="test" type="radio" id="gridCheck3">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label col-12" for="gridCheck4">
-                                    <span class="d-inline d-md-flex">
-                                        <img src="./assets/images/add_additional_services/4.png" class="img-fluid"
-                                             alt="Yoast SEO Premium">
-                                        <span class="services_container">
-                                            <h3 class="title">Yoast SEO Premium</h3>
-                                            <p class="description">Content quality and link suggestions as you write.</p>
-                                            <p class="description">$2.99/mo (Billed annually @ $35.88)</p>
-                                            <p class="info_text">
-Rank your website in Google! SEO hard? Not with Yoast SEO Premium! Use AI to quickly generate page titles and meta descriptions. Save time because the tool does a lot in the background, like adding structured data. Get link suggestions and make SEO maintenance easy with workflows. Yoast SEO helps to prevent visitors ending up on dead links and makes your posts look good in search results and on social media. Includes 24/7 support and full access to Yoast SEO academy. Save when purchasing Yoast SEO Premium with a Ithost.io hosting account. Renews at $8.33/mo (Billed Annually @ $99.99)                                            </p>
-                                        </span>
-                                    </span>
-                            </label>
-                            <input class="form-check-input" name="test" type="radio" id="gridCheck4">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label col-12" for="gridCheck5">
-                                    <span class="d-inline d-md-flex">
-                                        <img src="./assets/images/add_additional_services/5.png" class="img-fluid"
-                                             alt="Ecommerce Basic">
-                                        <span class="services_container">
-                                            <h3 class="title">eCommerce Tools</h3>
-                                            <p class="description">Content quality and link suggestions as you write.</p>
-                                            <p class="description">$4.99/mo (Billed annually @ $59.88)</p>
-                                            <p class="info_text">
-Create an online store so you can sell your goods and services. Ithost.io not only securely installs the latest version of WordPress and WooCommerce for you, but we also provide you with specialized eCommerce features that allow your visitors to purchase products using familiar payment processors like PayPal, Stripe, and Venmo, book appointments and service requests, create wishlists and custom gift cards. This add-on also allows you to create customized 'My Account' dashboards for your customers to track orders, review past purchases, edit profile information and more!. Renews at $9.99/mo (Billed Annually @ $119.88)
-                                            </p>
-                                        </span>
-                                    </span>
-                            </label>
-                            <input class="form-check-input" name="test" type="radio" id="gridCheck5">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="account_information">
-                <h2>Account Information</h2>
-                <fieldset class="form-group mt-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                           value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                        <img src="./assets/images/payment-1.png" class="img-fluid" alt="Visa">
-                                    </label>
-                                </div>
-                                <div class="">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                           value="option2">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        <img src="./assets/images/payment-2.png" class="img-fluid" alt="PayPal">
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-            </section>
-            <section id="review_order_details">
-                <h2>Review Order Details</h2>
-                <div class="container mt-4">
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <td>24/7/365 Live Chat, Email Support</td>
-                            <td class="order_status"><span>FREE !</span></td>
-                        </tr>
-                        <tr>
-                            <td>Instant Account Activation</td>
-                            <td class="order_status"><span>FREE !</span></td>
-                        </tr>
-                        <tr>
-                            <td>Money Back Guarantee!</td>
-                            <td class="order_status"><span>30 Days</span></td>
-                        </tr>
-                        <tr>
-                            <td>Hatchling: 36 Months</td>
-                            <td class="order_status">
-                                <span class="discount">$359.64</span>
-                                <span class="price">$99.00</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Hosting Addons</td>
-                            <td class="order_status">
-                                <span class="discount">$95.88</span>
-                                <span class="price">$35.88</span>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <hr>
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <td>Subtotal:</td>
-                            <td class="d-flex justify-content-end"><span>$ 455.52</span></td>
-                        </tr>
-                        <tr>
-                            <td>Discount:</td>
-                            <td class="d-flex justify-content-end"><span>- $ 320.64</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Amount Due:</strong></td>
-                            <td class="d-flex justify-content-end"><strong><span>$ 134.88</span></strong></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-            <div class="col-12 text-right">
-                <button type="submit" class="btn btn_check_out">Check out</button>
             </div>
-        </form>
-    </section>
+        </div>
+        <div class="col-xl-8">
+            <div class="card mb-4">
+                <div class="card-body shadow">
+                    <form>
+                        <input type="hidden" name="avatar" id="avatarHidden">
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputFirstName">First name</label>
+                                <input class="form-control" id="inputFirstName" type="text"
+                                       placeholder="Enter your first name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLastName">Last name</label>
+                                <input class="form-control" id="inputLastName" type="text"
+                                       placeholder="Enter your last name">
+                            </div>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Location</label>
+                                <input class="form-control" id="inputLocation" type="text"
+                                       placeholder="Enter your location">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                <input class="form-control" id="inputBirthday" type="date" placeholder="Enter your birthday">
+                            </div>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputPhone">Phone number</label>
+                                <input class="form-control" id="inputPhone" type="tel"
+                                       placeholder="Enter your phone number">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                                <input class="form-control" id="inputEmailAddress" type="email"
+                                       placeholder="Enter your email address">
+                            </div>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="password">Password</label>
+                                <div class="input_border p-0">
+                                    <input type="password" class="form-control border-0" id="password"
+                                           placeholder="Enter your password">
+                                    <span class="btn">
+                                        <i class="fa-regular fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="confirm_password">Confirm Password
+                                </label>
+                                <div class="input_border p-0">
+                                    <input type="password" class="form-control border-0" id="confirm_password"
+                                           placeholder="Confirm your password">
+                                    <span class="btn">
+                                        <i class="fa-regular fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 text-right">
+                            <button class="btn btn_check_out p-2 pl-3 pr-3">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Footer -->

@@ -64,6 +64,7 @@
     max-width: max-content;
 }
 
+.account form label,
 .new_domain > form label {
     font-family: Roboto, serif;
     font-size: 20px;
@@ -79,6 +80,8 @@
     gap: 20px;
 }
 
+.account form input,
+.account form select,
 .new_domain > form input,
 .new_domain > form select,
 .input_border {
@@ -87,6 +90,7 @@
     padding: 10px 14px;
 }
 
+.account form input::placeholder,
 .new_domain > form input::placeholder {
     font-family: Roboto, serif;
     font-size: 18px;
@@ -275,3 +279,10 @@
 }
 
 /* End Domain page */
+
+/* Start Account page */
+#avatarPreview {
+    width: 100%;
+    max-width: 315px;
+}
+/* End Account page */

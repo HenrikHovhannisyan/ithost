@@ -85,7 +85,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item last-item active">
-                  <a class="nav-link" href="/">Home</a>
+                  <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -209,7 +209,7 @@
             </div>
             <div class="other_list">
               <div class="register">
-                <a class="text-decoration-none" href="login.html"
+                <a class="text-decoration-none" href="./account.html"
                   ><i class="fa-solid fa-user-pen"></i>Account</a
                 >
               </div>
@@ -1739,5 +1739,22 @@
     <script src="assets/js/back-to-top-button.js"></script>
     <script src="assets/js/preloader.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      // Start Plans That Grow with You
+      document
+              .getElementById("billingToggle")
+              .addEventListener("change", function () {
+                let isYearly = this.checked;
+
+                document.querySelectorAll(".price").forEach((price) => {
+                  price.textContent = isYearly ? "55" : "29";
+                });
+                document.querySelectorAll(".month").forEach((label) => {
+                  label.textContent = isYearly ? "/Year" : "/Month";
+                });
+              });
+
+      // End Plans That Grow with You
+    </script>
   </body>
 </html>
