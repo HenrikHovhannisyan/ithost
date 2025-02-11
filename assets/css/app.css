@@ -18,6 +18,10 @@
     z-index: 1;
 }
 
+.footer-logo img {
+    max-width: 200px;
+}
+
 /* Start Domain page */
 
 .free_method {
